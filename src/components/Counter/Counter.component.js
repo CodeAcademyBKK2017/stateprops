@@ -1,4 +1,5 @@
 import React from 'react';
+import './Counter.style.css';
 
 class Counter extends React.Component {
     state = {
@@ -13,9 +14,13 @@ class Counter extends React.Component {
     render() {
         return (
             <div>
-                <input type="text" value={this.state.data} />
-                <button onClick={this.addFn}>ADD</button>
-                <button onClick={this.subtractFn}>SUBTRACT</button>
+                <div style={{ textAlign: "center" }}>
+                    <input className="Counter-box" type="text" value={this.state.data} />
+                </div>
+                <div style={{ textAlign: "center", marginTop: "90px" }}>
+                    <button className="Counter-button Counter-button--yellow" onClick={this.addFn}>ADD</button>
+                    <button className="Counter-button Counter-button--green" onClick={this.subtractFn}>SUBTRACT</button>
+                </div>
             </div>
         );
     }
