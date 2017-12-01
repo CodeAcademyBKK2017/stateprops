@@ -1,6 +1,6 @@
 # Create a counter application
 
-Add a text field with counter value starting from 0 by default.
+Add a text with counter value starting from 0 by default.
 
 Add a button on the page with text "ADD" and "SUBTRACT".
 
