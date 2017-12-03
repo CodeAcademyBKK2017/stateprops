@@ -27,7 +27,7 @@
     "no-extra-bind": 2,
     "keyword-spacing": 2,
     "key-spacing": 2,
-    "indent": [4, "tab"],
+    "indent": ["error", "tab"],
     "func-call-spacing": 2,
     "array-bracket-spacing": 2,
     "block-spacing": 2,
