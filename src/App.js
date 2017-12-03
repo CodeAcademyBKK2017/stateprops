@@ -26,9 +26,23 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter text={this.state.count}/>
-        <CountButton isAdd={true} countButtonClickHandler={this.countButtonClickHandler} />
-        <CountButton isAdd={false} countButtonClickHandler={this.countButtonClickHandler} />
+        <div style={{display: "inline-block"}}>
+          <div style={{display: "table-row"}}>
+            <div style={{display: "table-cell"}}/>
+            <Counter text={this.state.count} style={{display: "table-cell"}}/>
+            <div style={{display: "table-cell"}}/>
+          </div>
+
+          <div style={{display: "table-row", height: "80px"}}>
+            
+          </div>
+
+          <div style={{display: "table-row"}}>
+            <CountButton isAdd={true} countButtonClickHandler={this.countButtonClickHandler} style={{display: "table-cell"}}/>
+            <div style={{display: "table-cell"}}/>
+            <CountButton isAdd={false} countButtonClickHandler={this.countButtonClickHandler} style={{display: "table-cell"}}/>
+          </div>
+        </div>
       </div>
     );
   }
