@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import Enzyme, {shallow} from 'enzyme';
-import App from './App';
+import App from '../src/App';
 
 describe('App', () => {
   it('Overlay: renders correctly', () => {
