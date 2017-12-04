@@ -1,5 +1,8 @@
 import React,{Component} from 'react';
 import './App.css';
+import ProptTypes from 'prop-types';
+import noop from 'lodash/noop';
+
 
 class UI extends Component {
 
@@ -16,5 +19,15 @@ class UI extends Component {
     );
   }
 }
+
+UI.proptTypes = {
+  backgroundColor: String.isRequired,
+  onClick: ProptTypes.func.isRequired
+};
+
+UI.defaultProps = {
+  backgroundColor: '',
+  onClick: noop
+};
 
 export default UI;
