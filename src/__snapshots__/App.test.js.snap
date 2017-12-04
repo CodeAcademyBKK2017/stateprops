@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Overlay: renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    style={
+      Object {
+        "display": "inline-block",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "table-row",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "display": "table-cell",
+          }
+        }
+      />
+      <div
+        className="Counter"
+      >
+        0
+      </div>
+      <div
+        style={
+          Object {
+            "display": "table-cell",
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "table-row",
+          "height": "80px",
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "display": "table-row",
+        }
+      }
+    >
+      <button
+        className="CountButton AddButton"
+        onClick={[Function]}
+      >
+        Add
+      </button>
+      <div
+        style={
+          Object {
+            "display": "table-cell",
+          }
+        }
+      />
+      <button
+        className="CountButton SubtractButton"
+        onClick={[Function]}
+      >
+        Subtract
+      </button>
+    </div>
+  </div>
+</div>
+`;

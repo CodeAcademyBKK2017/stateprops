@@ -41,8 +41,11 @@
     "no-console": 2
   },
   "globals": {
-    "test": true,
+	"test": true,
+	"it": true,
+	"describe": true,
     "expect": true,
-    "jest": true
+	"jest": true,
+	"document": true
   }
 }
