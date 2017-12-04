@@ -4,7 +4,7 @@ import UI from'./UI.js'
 
 class App extends Component {
   state = {
-    value:1
+    value:0
   }
 
   oparate = (arg)=>()=>{

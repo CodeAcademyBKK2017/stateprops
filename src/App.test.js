@@ -1,8 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import renderer from 'react-test-renderer';
+import Enzyme, {shallow} from 'enzyme';
 import App from './App';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+describe('App', () => {
+  it('Overlay: renders correctly', () => {
+    const tree = renderer.create(<App />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+  it('add: should increment state', () => {
+    const wrapper = shallow(<App/>);
+    const instance = wrapper.instance();
+    instance.oparate(true)();
+    expect(instance.state.value).toEqual(1);
+  });
 });
