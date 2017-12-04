@@ -8,4 +8,12 @@ describe('App', () => {
     const tree = renderer.create(< App / >).toJSON();
     expect(tree).toMatchSnapshot();
   });
+
+  it('add: should increament state', () => {
+    const wrapper = shallow(< App / >);
+    const instance = wrapper.instance();
+    expect(instance.state.counter).toBe(0);
+    instance.add();
+    expect(instance.state.counter).toBe(1);
+  });
 });

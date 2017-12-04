@@ -1,0 +1,24 @@
+.App {
+    max-width: 800px;
+    min-width: 550px;
+    margin: 0 auto;
+
+}
+
+.box-result {
+    margin: 100px 0px;
+}
+.box-control {
+    display: flex; 
+}
+.box-control .box-control-item {
+    flex: 1;
+}
+.box-control .box-control-item.box-control-item-left {
+    text-align: left;
+    padding-left: 80px;
+}
+.box-control .box-control-item.box-control-item-right {
+    text-align: right;
+    padding-right: 80px;
+}
