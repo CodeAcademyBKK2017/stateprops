@@ -3,7 +3,7 @@ import './App.css';
 
 class App extends Component {
   add = () => {
-    this.setState({count: this.state.count + 1}); 
+    this.setState({count: this.state.count + 1});
   }
   subtract = () => {
     this.setState({count: this.state.count - 1});
