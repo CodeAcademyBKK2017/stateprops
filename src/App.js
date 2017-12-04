@@ -21,10 +21,10 @@ class App extends Component {
         </div>
         <div className="box-control">
           <div className="box-control-item box-control-item-left">
-            <Button handler={this.add} type="add" title="ADD" />
+            <Button onClick={this.add} type="add">ADD</Button>
           </div>
           <div className="box-control-item box-control-item-right">
-            <Button handler={this.subtract} type="subtract" title="SUBTRACT" />
+            <Button onClick={this.subtract} type="subtract">SUBTRACT</Button>
           </div>
         </div>
       </div>

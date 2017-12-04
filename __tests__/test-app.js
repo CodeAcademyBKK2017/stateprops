@@ -9,5 +9,19 @@ describe('App', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  it('add: should increment state', () => {
+    const wrapper = shallow(<App />);
+    const instance = wrapper.instance();
 
+    instance.add();
+    expect(instance.state.counter).toBe(1);
+  });
+
+  it('subtract: should decrement state', () => {
+    const wrapper = shallow(<App />);
+    const instance = wrapper.instance();
+
+    instance.subtract();
+    expect(instance.state.counter).toBe(-1);
+  });
 });

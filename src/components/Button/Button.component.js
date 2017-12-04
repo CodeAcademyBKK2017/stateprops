@@ -3,10 +3,10 @@ import './Button.css';
 
 class Button extends Component {
   render () {
-    const {handler,type} = this.props;
+    const {type} = this.props;
 
     return (
-      <div className={`btn btn-${type}`} onClick={handler}>{this.props.title}</div>
+      <div className={`btn btn-${type}`}>{this.props.children}</div>
     );
   }
 }
