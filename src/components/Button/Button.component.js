@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Button.css';
 
-class App extends Component {
+class Button extends Component {
   render() {
+    const { handler,type } = this.props;
+
     return (
-        <button onClick={this.props.onClick}>{this.props.title}</button>
+      <button className={`btn btn-${type}`} onClick={handler()}>{this.props.title}</button>
     );
   }
 }
