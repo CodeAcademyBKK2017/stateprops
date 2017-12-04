@@ -15,5 +15,22 @@ describe('App', () => {
 		const tree = renderer.create(<App />).toJSON();
 		expect(tree).toMatchSnapshot();
 	});
+
+	it('add: should increment state', () => {
+		const wrapper = shallow(<App />);
+		const instance = wrapper.instance();
+		
+		expect(instance.state.count).toBe(0);
+		instance.countButtonClickHandler(true)();
+		expect(instance.state.count).toBe(1);
+	});
+
+	it('subtract: should decrement state', () => {
+		const wrapper = shallow(<App />);
+		const instance = wrapper.instance();
+		
+		expect(instance.state.count).toBe(0);
+		instance.countButtonClickHandler(false)();
+		expect(instance.state.count).toBe(1);
+	});
 });
-  
