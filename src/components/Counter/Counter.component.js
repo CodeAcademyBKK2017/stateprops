@@ -1,10 +1,12 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Counter.css';
 
 class Counter extends Component {
-  render() {
+  render () {
     return (
-      <div className="counter">{this.props.children}</div>
+      <div className="box-result">
+        <div className="counter">{this.props.children}</div>
+      </div>
     );
   }
 }

@@ -16,9 +16,8 @@ class App extends Component {
   render () {
     return (
       <div className="App">
-        <div className="box-result">
-          <Counter>{this.state.counter}</Counter>
-        </div>
+        <Counter>{this.state.counter}</Counter>
+
         <div className="box-control">
           <div className="box-control-item box-control-item-left">
             <Button onClick={this.add} type="add">ADD</Button>

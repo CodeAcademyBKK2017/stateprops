@@ -21,6 +21,7 @@ exports[`App Overlay: renders correctly 1`] = `
     >
       <div
         className="btn btn-add"
+        onClick={undefined}
       >
         ADD
       </div>
@@ -30,6 +31,7 @@ exports[`App Overlay: renders correctly 1`] = `
     >
       <div
         className="btn btn-subtract"
+        onClick={undefined}
       >
         SUBTRACT
       </div>
