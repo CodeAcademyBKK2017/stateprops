@@ -29,6 +29,12 @@
         "quotes": ["error", "single"],
         "no-console": 2
     
+    },
+    "globals": {
+        "test": true,
+        "expect": true,
+        "jest": true,
+        "describe": true,
+        "it": true
     }
-
  }

@@ -9,9 +9,9 @@ class App extends Component {
     counter: 0
   }
  
-  add = () => () => this.setState({counter: this.state.counter + 1});
-  
-  subtract = () => () => this.setState({counter: this.state.counter - 1});
+  add = () => this.setState({counter: this.state.counter + 1});
+
+  subtract = () => this.setState({counter: this.state.counter - 1});
 
   render () {
     return (
