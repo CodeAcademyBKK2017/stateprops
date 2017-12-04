@@ -1,0 +1,14 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "semi": "error",
+        "indent" :"error",
+        "semi-spacing" :"error",
+        "key-spacing" :"error",
+        "no-spaced-func" :"error",
+        "no-empty-character-class":"error",
+        "eqeqeq":"error"
+    }
+
+
+}

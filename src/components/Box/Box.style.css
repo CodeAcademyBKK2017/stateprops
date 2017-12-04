@@ -1,0 +1,43 @@
+
+.DisplayBox {
+background-color: hsl(187, 91%, 56%);
+height:150px;
+width: 150px;
+padding: 50px;
+font-size: 80px;
+text-align: center;
+border-style: solid;
+border-color: #00090a;
+align-content: center;
+align-self: center;
+margin-left: 50%;
+margin-bottom: 20%;
+}
+.ADD {
+    background-color: rgb(243, 239, 24);
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-style: solid;
+    border-color: #00090a;
+    border-radius: 10px;
+    display: -webkit-inline-box;
+    margin-left : 200px;
+    margin-right: 200px;
+    }
+.SUBTRACT {
+        background-color: #27882c;
+        height: 50px;
+        width: 200px;
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+
+display: inline-flex;
+border-style: solid;
+border-color: #00090a;
+        }
