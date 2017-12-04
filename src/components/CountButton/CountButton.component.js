@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import './CountButton.style.css';
+import PropTypes from 'prop-types';
+import noop from 'lodash/noop';
 
 class CountButton extends Component {
 	render () {
@@ -19,5 +21,15 @@ class CountButton extends Component {
 		);
 	}
 }
+
+CountButton.propTypes = {
+	isAdd: PropTypes.bool.isRequired,
+	countButtonClickHandler: PropTypes.func.isRequired
+};
+
+CountButton.defaultProps = {
+	isAdd: true,
+	countButtonClickHandler: noop
+};
 
 export default CountButton;
