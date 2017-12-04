@@ -33,6 +33,8 @@
     "globals": {
         "test": true,
         "expect": true,
-        "jest": true
+        "jest": true,
+        "describe": true,
+        "it": true
     }
 }

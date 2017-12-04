@@ -13,7 +13,7 @@ class App extends Component {
   };
   render () {
 
-    console.log('render');
+    
     return (
       <div className="App">
         <input type="text" value={this.state.count} /> 
