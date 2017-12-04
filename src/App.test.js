@@ -31,6 +31,6 @@ describe('App', () => {
 		
 		expect(instance.state.count).toBe(0);
 		instance.countButtonClickHandler(false)();
-		expect(instance.state.count).toBe(1);
+		expect(instance.state.count).toBe(-1);
 	});
 });
