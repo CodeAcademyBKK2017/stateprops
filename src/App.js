@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
 
 class App extends Component {
   add = () => {
-    this.setState({count: this.state.count+1}); 
+    this.setState({count: this.state.count + 1}); 
   }
   subtract = () => {
-    this.setState({count: this.state.count-1});
+    this.setState({count: this.state.count - 1});
   }
   state = {
     count: 0
   };
-  render() {
+  render () {
 
     console.log('render');
     return (
