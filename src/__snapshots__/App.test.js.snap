@@ -33,7 +33,7 @@ exports[`App Overlay: renders correctly 1`] = `
         ADD
       </button>
       <button
-        className="Counter-button Counter-button--green"
+        className="Counter-button Counter-button--yellow"
         onClick={[Function]}
       >
         SUBTRACT
