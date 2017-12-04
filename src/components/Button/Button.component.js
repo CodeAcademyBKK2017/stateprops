@@ -13,12 +13,12 @@ class Button extends React.Component {
 
 Button.propTypes = {
   type: PropTypes.oneOf(['ADD', 'SUBTRACT']).isRequired,
-  onClick: PropTypes.func.isRequired
+  handler: PropTypes.func.isRequired
 };
 
 Button.defaultProps = {
   type: 'ADD',
-  onClick: noop
+  handler: noop
 };
 
 export default Button;
