@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import PropTypes from 'prop-types';
 
 class App extends Component {
   add = () => {
@@ -11,16 +12,22 @@ class App extends Component {
   state = {
     count: 0
   };
-  render () {
 
-    
+  render () {
     return (
       <div className="App">
         <input type="text" value={this.state.count} /> 
-        <button onClick={() => this.add()}>ADD</button> <button onClick={() => this.subtract()}>SUBTRACT</button>
+        <button onClick={this.add}>ADD</button> <button onClick={this.subtract}>SUBTRACT</button>
       </div>
     );
   }
 }
+
+
+App.propTypes = {
+  test: PropTypes.string
+};
+App.defaultProps = {
+};
 
 export default App;
