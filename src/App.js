@@ -2,16 +2,21 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
-  state = {
-    text:0
+  constructor(props){
+    super(props);
+    this.state = {
+      text:0
+    }
+    this.addValue = this.addValue.bind(this);
+    this.subValue = this.subValue.bind(this);
   }
-  addValue = () => {
+  addValue(){
     let newState = this.state.text + 1;
     this.setState({
       text:newState
     });
   }
-  subValue = () => {
+  subValue(){
     let newState = this.state.text - 1;
     this.setState({
       text:newState
