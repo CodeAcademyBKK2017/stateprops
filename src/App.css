@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.AppDiv {
+  text-align: center;
+  font-size: '100px';
+  background-color: #00C853;
+  width:100px;
+}
+
 .App-title {
   font-size: 1.5em;
 }

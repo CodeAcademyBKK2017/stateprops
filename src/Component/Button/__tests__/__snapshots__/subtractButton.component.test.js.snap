@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`subtractButton Snapshot Test 1`] = `
+<subtractButton
+  onClick={[Function]}
+>
+  Subtract
+</subtractButton>
+`;

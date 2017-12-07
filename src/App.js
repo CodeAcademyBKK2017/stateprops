@@ -1,27 +1,28 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './App.css';
+import Add from './Component/Button/addButton.component';
+import Subtract from './Component/Button/subtractButton.component';
+import Counter from './Component/Counter/Counter.component';
 
 class App extends Component {
   state = {
-    text : 0,
+    count: 0,
     add: 'ADD',
     subtract: 'SUBTRACT'
-  }
+  };
   addValue = () => {
-    let newValue = this.state.text + 1;
-    this.setState({ text : newValue })
+    this.setState({count: this.state.count + 1});
   }
   subtractValue = () => {
-    let newValue = this.state.text - 1;
-    this.setState({text : newValue })
+    this.setState({count: this.state.count - 1});
   }
-  render() {
+  render () {
     return (
       <div className="App">
-        <h1 style={{ fontSize: '40px' }}>{this.state.text}</h1>
+        <Counter style={{fontSize: '80px'}} count={this.state.count}/>
         <div>
-          <button onClick = {this.addValue} >{this.state.add}</button>
-          <button onClick = {this.subtractValue} >{this.state.subtract}</button>
+          <Add addValue={this.addValue} textValue={this.state.add}/>
+          <Subtract subtractValue={this.subtractValue} textValue={this.state.subtract}/>
         </div>
       </div>
     );
